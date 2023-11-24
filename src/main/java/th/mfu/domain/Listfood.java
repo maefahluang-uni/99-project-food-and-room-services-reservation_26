@@ -16,15 +16,12 @@ public class Listfood {
     @GeneratedValue(strategy =GenerationType.IDENTITY )
     private Long id;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
-    private User user;
 
     @OneToOne(cascade = CascadeType.MERGE)
     private Payment payment;
 
-    public Listfood(Long id, Date listDate, User user, Payment payment) {
+    public Listfood(Long id, Date listDate, Payment payment) {
         this.id = id;
-        this.user = user;
         this.payment = payment;
     }
 
@@ -41,13 +38,6 @@ public class Listfood {
     }
 
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public Payment getPayment() {
         return payment;

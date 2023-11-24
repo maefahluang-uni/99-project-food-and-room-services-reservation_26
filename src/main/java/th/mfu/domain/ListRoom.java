@@ -14,20 +14,17 @@ public class ListRoom {
     private Date checkout;
 
 
-    @ManyToOne(cascade = CascadeType.MERGE)
-    private User user;
 
     @OneToOne(cascade = CascadeType.MERGE)
     private Payment payment;
 
-    public ListRoom(Long id, String name, Integer tell, Date checkin, Date checkout, User user, Payment payment) {
+    public ListRoom(Long id, String name, Integer tell, Date checkin, Date checkout,  Payment payment) {
 
         this.id = id;
         this.name = name;
         this.tell = tell;
         this.checkin = checkin;
         this.checkout = checkout;
-        this.user = user;
         this.payment = payment;
     }
 
@@ -75,14 +72,7 @@ public class ListRoom {
         this.checkout = checkout;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
+    
     public Payment getPayment() {
         return payment;
     }
