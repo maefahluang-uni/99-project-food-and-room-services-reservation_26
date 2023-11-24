@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import th.mfu.dto.UserLoginDTO;
+import th.mfu.dto.UserLoginDto;
 import th.mfu.service.DefaultUserService;
 
 @Controller
@@ -17,8 +17,8 @@ public class LoginController {
 	private DefaultUserService userService;
 
     @ModelAttribute("user")
-    public UserLoginDTO userLoginDTO() {
-        return new UserLoginDTO();
+    public UserLoginDto userLoginDTO() {
+        return new UserLoginDto();
     }
     
 	@GetMapping
@@ -28,7 +28,7 @@ public class LoginController {
 	
 	@PostMapping
 	public void  loginUser(@ModelAttribute("user") 
-	UserLoginDTO userLoginDTO) {
+	UserLoginDto userLoginDTO) {
 	 userService.loadUserByUsername(userLoginDTO.getUsername());
 	}
 }
