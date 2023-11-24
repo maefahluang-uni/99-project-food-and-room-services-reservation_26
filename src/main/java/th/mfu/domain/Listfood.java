@@ -17,10 +17,11 @@ public class Listfood {
     private Long id;
 
 
+
     @OneToOne(cascade = CascadeType.MERGE)
     private Payment payment;
 
-    public Listfood(Long id, Date listDate, Payment payment) {
+    public Listfood(Long id, Date listDate,  Payment payment) {
         this.id = id;
         this.payment = payment;
     }
