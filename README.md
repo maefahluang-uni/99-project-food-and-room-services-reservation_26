@@ -13,3 +13,5 @@ Supakorn Vaenlor 6531503077
 Sirinan Hongdamnean 6531503083
 
 Anchisa Sittee 6531503089
+
+Backend can run but cannot connected with Frontend
