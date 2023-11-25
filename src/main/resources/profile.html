@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="Contentbox">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrung Park</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Prompt:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+<p class="Topic" id="restaurant-title">Profile</p>
+<div class="language-buttons" style="margin: 2rem;">
+  <button onclick="changeLanguage('en')">EN /</button>
+  <button onclick="changeLanguage('th')">TH</button>
+</div>
+<form>
+  <div class="elem-group">
+    <label class="Head" id="menu1-title">Your Name</label>
+    <div style="padding: 5px;"></div>
+    <p class="Info" id="menu1-des">Benjamin Casper</p>
+  </div>
+  <div style="padding: 20px;"></div>
+  <div class="elem-group">
+    <label class="Head" id="menu3-title">Your Phone</label>
+    <div style="padding: 5px;"></div>
+    <p class="Info">098-341-3872</p>
+  </div>
+  <div style="padding: 20px;"></div>
+  <div class="elem-group">
+    <label class="Head" id="menu2-title">Your E-mail</label>
+    <div style="padding: 5px;"></div>
+    <p class="Info" id="menu2-des">Ben.casper@gmail.com</p>
+  </div>
+  <div style="padding: 30px;"></div>
+  <button id="submit-button">Logout</button>
+
+<script>
+  function changeLanguage(language) {
+      const body = document.body;
+      body.className = language;
+
+      // Update content based on the selected language
+      const restaurantTitle = document.getElementById('restaurant-title');
+      const menu1Title = document.getElementById('menu1-title');
+      const menu2Title = document.getElementById('menu2-title');
+      const menu3Title = document.getElementById('menu3-title');
+      const menu1Description = document.getElementById('menu1-des');
+      const menu2Description = document.getElementById('menu2-des');
+      const logout = document.getElementById('submit-button');
+      
+     
+
+      if (language === 'en') {
+          restaurantTitle.textContent = 'Profile';
+          menu1Title.textContent = 'Your Name';
+          menu2Title.textContent = 'Your E-mail';
+          menu3Title.textContent = 'Your Phone';
+          menu1Description.textContent = 'Benjamin Casper';
+          menu2Description.textContent = 'Ben.casper@gmail.com';
+          logout.textContent = 'Logout';
+          
+
+      } else if (language === 'th') {
+          restaurantTitle.textContent = 'โปรไฟล์';
+          menu1Title.textContent = 'ชื่อ-นามสกุล';
+          menu2Title.textContent = 'อีเมล์ของคุณ';
+          menu3Title.textContent = 'เบอร์โทรศัพท์ของคุณ';
+          menu1Description.textContent = 'นายสะอาด จังเลย';
+          menu2Description.textContent = 'นายสะอาด@gmail.com';
+          logout.textContent = 'ออกจากระบบ';
+         
+    }
+}
+
+</script>
+
+</body>
+</html>

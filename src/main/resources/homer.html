@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrungpark</title>
+    <link rel="stylesheet" href="homer.css">
+</head>
+
+    <body>
+      <header class="header" id="navigation-menu">
+        <div class="container">
+          <nav>
+            <a href="home.html" class="logo"> <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/logo-chiangrungpark-1200x485.png" alt=""> </a>
+    
+            <ul class="nav-menu">
+              <li> <a href="home.html" class="nav-link" id="Home-menu">Home</a> </li>
+              <li> <a href="serve.html" class="nav-link" id="Serve-menu">Serve</a> </li>
+              <li> <a href="homer.html" class="nav-link" id="Room-menu">Room</a> </li>
+              <li> <a href="homeo.html" class="nav-link" id="food-menu">Order Food</a> </li>
+              <li> <a href="contact.html" class="nav-link" id="Contact-menu">Contact</a> </li>
+              <li><a href="cancelorder.html" id="cancle">Cancel </a></li>
+              
+            </ul>
+            
+          <div class="language-buttons" style="margin: 2rem;">
+              <button onclick="changeLanguage('en')">EN</button>
+              <button onclick="changeLanguage('th')">TH</button>
+          </div>
+
+          <div class="loginbox">
+            <a href="login_page.html" class="loginbox" id="oo"><i class='bx bxs-user'></i>Account</a>
+          </div>
+          </nav>
+        </div>
+      </header>
+        
+      </script>
+      <section class="home" id="home-menu">
+        <div class="head_container">
+          <div class="box">
+            <div class="text">
+                <h1>CHIANG RUNG PARK</h1> 
+                <p class="p" id="chiangrungpark-description" >Chiang Rung Park is a project with a Nordic style resort, restaurant and cafe inspired by European architecture. Give a warm feeling Simple, good atmosphere, cool, with a view of the surrounding mountains. It is only 20 minutes from Chiang Rai city and is close to many tourist attractions.</p>
+                <a href="more info.html"><button  class="button" id="moreinfo-button">more info</button></a>
+              </div>
+          </div>
+          </div>
+          <div class="image">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DJI_07851.jpg" class="slide">
+          </div>
+          <div class="image_item">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC54531.jpg" alt="" class="slide active" onclick="img('image/home1.jpg')">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC57021.jpg" alt="" class="slide active" onclick="img('image/home2.jpg')">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5927.jpg" alt="" class="slide active" onclick="img('image/home3.jpg')">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5587.jpg" alt="" class="slide active" onclick="img('image/home4.jpg')">
+          </div>
+        </div>
+      
+        <section class="book">
+          <div class="container flex">
+              <h1 class="h1" id="form-menu">ACCOMMODATION   BOOKING   FORM</h1>
+              <p class="p2" id="booking-menu">Reserve your accommodation today before anyone else by filling out our form</p>
+          </div>
+              <div class="input grid">
+                  <div class="box">
+                    <img class="image1" src="https://i.pinimg.com/564x/2f/02/5a/2f025aa02bd16703950afaf16960911d.jpg" alt="Image 1">
+                      <label class="name1" id="name-text">Name-Surname</label> 
+                      <input type="text" id="name" name="name"  placeholder="Fill in your first and last name." required>
+                  </div>
+      
+                  <div class="box">
+                    <img class="image1" src="https://i.pinimg.com/564x/74/fe/f2/74fef23e2e02b874f883b8fbd3847cc8.jpg" alt="Image 1">
+                      <label class="tall" id="tall-text">Telephone</label> 
+                      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                  </div>
+      
+                  <div class="box">
+                    <img class="image1" src="https://i.pinimg.com/564x/66/a4/6e/66a46efa619764592dab02a136669bb0.jpg" alt="Image 1">
+                      <label class="check-in" id="check-in">Check-in</label>
+                      <input type="date" id="checkin" name="checkin" required>
+                  </div>
+      
+                  <div class="box">
+                    <img class="image1" src="https://i.pinimg.com/564x/66/a4/6e/66a46efa619764592dab02a136669bb0.jpg" alt="Image 1">
+                      <label class="checkout" id="check-out">Check-out</label>
+                      <input type="date" id="checkout" name="checkout" required>
+                  </div>
+      
+                  <div class="box">
+                      <label for="accommodation" class="box" id="box-text">Choose accommodation</label>
+                      <select id="accommodation" name="accommodation">
+                          <option value="" class="boxs" id="boxs-text">Choose accommodation</option>
+                          <option value="standard" class="standard" id="standard-menu">Nordic style accommodation in the mountains</option>
+                          <option value="deluxe" class="deluxe" id="deluxe-menu">Floating house</option>
+                      </select>
+                  </div>
+      
+              </div>
+      
+              <a href="payment.html">
+              <div class="searchs">
+                <button onclick="submitImage()" id="submits">Submit</button>
+              </div>
+            </a>
+          </div>
+      </section>
+      
+      <footer>
+        <div class="footer" id="copyright">
+        <p>Copyright 2023 , Chiangrungpark © All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+        function changeLanguage(language) {
+            const body = document.body;
+            body.className = language;
+    
+            // Update content based on the selected language
+            const Homemenu = document.getElementById('Home-menu');
+            const Servemenu = document.getElementById('Serve-menu');
+            const Roommenu = document.getElementById('Room-menu');
+            const foodmenu = document.getElementById('food-menu');
+            const Contactmenu = document.getElementById('Contact-menu');
+            const oo = document.getElementById('oo');
+            const cancle = document.getElementById('cancle');
+
+            const chiangrungparkdescription = document.getElementById('chiangrungpark-description')
+            const formmenu = document.getElementById('form-menu');
+            const moreinfobutton = document.getElementById('moreinfo-button');
+            const bookingmenu = document.getElementById('booking-menu');
+            const nametext = document.getElementById('name-text');
+            const talltext = document.getElementById('tall-text');
+            const menu3Description = document.getElementById('menu3-description');
+            const checkin = document.getElementById('check-in');
+            const checkout = document.getElementById('check-out');
+            const boxtext = document.getElementById('box-text');
+            const boxstext = document.getElementById('boxs-text');
+            const standardmenu = document.getElementById('standard-menu');
+            const deluxemenu = document.getElementById('deluxe-menu');
+            const submits = document.getElementById('submits');
+            const copyright = document.getElementById('copyright');
+            const nameInput = document.getElementById('name');
+            const phoneInput = document.getElementById('phone');
+
+    
+            if (language === 'en') {
+                Homemenu.textContent = 'Home';
+                Servemenu.textContent = 'Serve';
+                Roommenu.textContent = 'Room';
+                foodmenu.textContent = 'Order Food';
+                Contactmenu.textContent = 'Contact';
+                oo.innerHTML = '<i class="bx bxs-user"></i>Account';
+                cancle.textContent = 'Cancel';
+
+
+                chiangrungparkdescription.textContent = 'Chiang Rung Park is a project with a Nordic style resort, restaurant and cafe inspired by European architecture. Give a warm feeling Simple, good atmosphere, cool, with a view of the surrounding mountains. It is only 20 minutes from Chiang Rai city and is close to many tourist attractions.';
+                moreinfobutton.textContent = 'more info';
+                formmenu.textContent = 'ACCOMMODATION   BOOKING   FORM';
+                bookingmenu.textContent = 'Reserve your accommodation today before anyone else by filling out our form';
+                nametext.textContent = 'Name-Surname';
+                talltext.textContent = 'Telephone number';
+                checkin.textContent = 'Check-in';
+                checkout.textContent = 'Check-out';
+                boxtext.textContent = 'Choose accommodation';
+                boxstext.textContent = 'Choose accommodation';
+                standardmenu.textContent = 'Nordic style accommodation in the mountains';
+                deluxemenu.textContent = 'Floating house';
+                submits.textContent = 'Submit';
+                copyright.textContent = 'Copyright 2023 , Chiangrungpark © All rights reserved.';
+                nameInput.placeholder = 'Fill in your first and last name.';
+                phoneInput.placeholder = 'Enter your phone number';
+                
+            
+              } else if (language === 'th') {
+               Homemenu.textContent = 'หน้าแรก';
+               Servemenu.textContent = 'บริการ';
+               Roommenu.textContent = 'ที่พัก';
+               foodmenu.textContent = 'สั่งอาหาร';
+               Contactmenu.textContent = 'ติดต่อ';
+               oo.innerHTML = '<i class="bx bxs-user"></i>บัญชี';
+               cancle.textContent = 'ยกเลิก';
+
+               chiangrungparkdescription.textContent = 'เชียงรุ้งปาร์ค คือ โครงการที่มีรีสอร์ท ร้านอาหาร และคาเฟ่สไตล์นอร์ดิกที่ได้รับแรงบันดาลใจมาจากสถาปัตยกรรมของยุโรป ให้ความรู้สึกอบอุ่น เรียบง่ายบรรยากาศดี เย็นสบาย เห็นวิวภูเขาล้อมรอบ อยู่ห่างจากตัวเมืองเชียงรายเพียง 20 นาที แถมยังอยู่ใกล้สถานที่ท่องเที่ยวต่างๆ มากมาย';
+               moreinfobutton.textContent = 'ข้อมูลเพิ่มเติม';
+               formmenu.textContent = 'แบบฟอร์มการจองที่พัก';
+               bookingmenu.textContent = 'จองที่พักของคุณได้แล้ววันนี้ก่อนใครเพียงกรอกข้อมูลบนฟอร์มของเรา';
+               nametext.textContent = 'ชื่อ-สกุล';
+               talltext.textContent = 'เบอร์โทรศัพท์';
+               checkin.textContent = 'เช็คอิน';
+               checkout.textContent = 'เช็คเอ้าท์';
+               boxtext.textContent = 'เลือกที่พัก';
+               boxstext.textContent = 'เลือกที่พัก';
+               standardmenu.textContent = 'ที่พักสไตล์อดิกบนเขา';
+               deluxemenu.textContent = 'บ้านลอยน้ำ';
+               submits.textContent = 'ยืนยัน';
+               copyright.textContent = 'ลิขสิทธิ์ 2023 , Chiangrungpark © สงวนลิขสิทธิ์ทุกประการ';
+               nameInput.placeholder = 'กรุณากรอกชื่อ-นามสกุล';
+               phoneInput.placeholder = 'กรอกหมายเลขโทรศัพท์ของคุณ';
+            }
+        }
+      </script>
+    
+    </body>
+  
+  </html>
+     

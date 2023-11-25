@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrung Park</title>
+    <link rel="stylesheet" href="styleh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mitr:wght@600&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/logo-chiangrungpark-1200x485.png" alt=""> </a>
+    
+        </div>
+
+        <ul class="menu">
+            
+                <li > <a href="home.html" class="nav-link" id="home-menu">Home</a> </li>
+                <li> <a href="About.html" class="nav-link" id="about-menu">About</a> </li>
+                <li> <a href="homer.html" class="nav-link" id="room-menu">Room</a> </li>
+                <li> <a href="homeo.html" class="nav-link" id="food-menu">Order Food</a> </li>
+                <li> <a href="serve.html" class="nav-link" id="Serve-menu">Serve</a> </li>
+                <li> <a href="contact.html" class="nav-link" id="Contact-menu">Contact</a> </li>
+    
+        </ul>
+
+        <div class="language-buttons" style="margin: 1rem;">
+          <button onclick="changeLanguage('en')">EN </button>
+          <button onclick="changeLanguage('th')">TH</button>
+         </div>
+
+         <div class="loginbox">
+          <a href="login_page.html" class="loginbox" id="login-menu"><i class='bx bxs-user'></i>Account</a>
+        </div>
+        
+</div>
+</body>
+</html>
+
+<body>
+  <div class="transbox" > 
+    <p id="box-menu">CHIANG RUNG PARK</p>
+  </div>
+
+  <div id="word">
+    Welcome to 
+</div>
+</div>
+
+</body>
+</html>
+
+<body>
+
+<div class="img">
+  <a target="_blank" href="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5927.jpg">
+    <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5927.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5353-2-3-1.jpg">
+    <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5353-2-3-1.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5678.jpg">
+    <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5678.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC54531.jpg">
+    <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/DSC54531.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<script>
+  function changeLanguage(language) {
+      const body = document.body;
+      body.className = language;
+
+      // Update content based on the selected language
+      const homemenu = document.getElementById('home-menu');
+      const aboutmenu = document.getElementById('about-menu');
+      const roommenu = document.getElementById('room-menu');
+      const foodment = document.getElementById('food-menu');
+      const Servement = document.getElementById('Serve-menu');
+      const Contactmenu = document.getElementById('Contact-menu');
+      const boxmenu = document.getElementById('box-menu');
+      const loginmenu = document.getElementById('login-menu')
+      
+      if (language === 'en') {
+          homemenu.textContent = 'Home';  
+          aboutmenu.textContent = 'About';
+          roommenu.textContent = 'Room';   
+          foodment.textContent = 'Order Food'; 
+          Servement.textContent = 'Serve';
+          Contactmenu.textContent = 'Contact'; 
+          boxmenu.textContent = 'CHIANG RUNG PARK';
+          loginmenu.innerHTML = '<i class="bx bxs-user"></i>Account';
+         
+      } else if (language === 'th') {
+        homemenu.textContent = 'หน้าแรก';
+        aboutmenu.textContent = 'เกี่ยวกับ';
+        roommenu.textContent = 'ห้องพัก';  
+        foodment.textContent = 'สั่งอาหาร';
+        Servement.textContent = 'บริการ';
+        Contactmenu.textContent = 'ติดต่อ';
+        boxmenu.textContent = 'CHIANG RUNG PARK';
+        loginmenu.innerHTML = '<i class="bx bxs-user"></i>บัญชี';
+      }
+  }
+</script>
+
+</body>
+</html>
+
