@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC57021.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    position: fixed;
+    height: "110";
+    display: grid;
+    font-family: sans-serif;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:none;
+    color: #ffffff;
+    height: 70px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+.logo img {
+    width: 190px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e700;
+    background-color: #f3f3f300;
+    font-family: sans-serif;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    margin: 25px;
+    font-size: 22px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+menu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.menu a:hover {
+    background-color: rgba(88, 51, 38, 0.673);
+    border-radius: 30px;
+}
+
+.loginbox{
+    background-color: gray;
+    color: white;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+.language-buttons button  {
+        background-color: #0c500f;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        margin-right: 15px;
+        font-size: 20px;
+        font-family: sans-serif;
+
+}
+div.transbox p {
+    width: 500px; 
+     height: 5vh;
+    padding: 20px;
+    font-weight: 650;
+    color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    top: 60%;
+    left: 35%;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    z-index: 101;
+}
+
+#word{
+    width: 110%; 
+    height: 5vh;
+   padding: 20px;
+   font-weight: 100%;
+   color: #ffffff;
+   padding: 20px;
+   position: absolute;
+   bottom: 290px;
+   left: -4%;
+   text-align: center;
+   font-size: 70px;
+   line-height: 1.5;
+   font-family: sans-serif;
+   z-index: 101;
+}
+div.img {
+    border: 3px solid #ffffff;
+    float: right;
+    width: 180px;
+    width: 180px;
+    height: 120px;
+    margin-top: 30px;
+    transform: translate(20px,0px);
+    font-family: sans-serif;
+}	
+
+div.img:hover {
+    border: 5px solid #ffffff;
+    
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+   
+}

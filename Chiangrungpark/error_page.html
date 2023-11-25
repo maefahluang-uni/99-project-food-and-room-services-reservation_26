@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error page</title>
+    <link rel="stylesheet" href="style_prob.css">
+</head>
+
+<body>
+    <!-- Language Buttons -->
+    <div class="language-buttons" style="margin: 2rem;">
+        <button onclick="changeLanguage('en')">EN /</button>
+        <button onclick="changeLanguage('th')">TH</button>
+    </div>
+
+    <!-- Form Footer -->
+    <div class="form-footer">
+        <div class="heading">
+            <h1 id="error-heading">You entered incorrect data! Please retry again.</h1>
+        </div>
+        <br>
+        <p><a href="signin_page.html" id="signin-page-link">Sign-in</a></p>
+        <br>
+        <p><a href="login_page.html" id="login-page-link">Log-in</a></p>
+        <br>
+        <p><a href="home.html" id="main-page-link">Main page</a></p>
+    </div>
+
+    <script>
+        function changeLanguage(language) {
+            // You can extend this function to include translations for other languages
+            const headingElement = document.getElementById('error-heading');
+            const signinPageLink = document.getElementById('signin-page-link');
+            const loginPageLink = document.getElementById('login-page-link');
+            const mainPageLink = document.getElementById('main-page-link');
+
+            if (language === 'th') {
+                document.documentElement.lang = 'th';
+                headingElement.innerText = 'คุณได้ทำการใส่ข้อมูลที่ผิดพลาด! โปรงลองอีกครั้ง';
+                signinPageLink.innerText = 'ลงชื่อเข้าใช้งาน';
+                loginPageLink.innerText = 'เข้าสู่ระบบ';
+                mainPageLink.innerText = 'หน้าหลัก';
+            } else {
+                // Default to English
+                document.documentElement.lang = 'en';
+                headingElement.innerText = 'You entered incorrect data! Please retry again.';
+                signinPageLink.innerText = 'Sign-in';
+                loginPageLink.innerText = 'Log-in';
+                mainPageLink.innerText = 'Main page';
+            }
+        }
+    </script>
+</body>
+
+</html>

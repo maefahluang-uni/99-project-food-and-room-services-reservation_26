@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrung Park</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mitr:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Itim&family=Mali:wght@300&family=Mitr:wght@600&family=Noto+Sans+Thai+Looped:wght@200;300&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <div class="about">
+        <div class="logo">
+            <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/logo-chiangrungpark-1200x485.png" alt=""> </a>
+    
+        </div>
+        
+        <ul class="menu">
+            
+            <li > <a href="home.html" class="nav-link" id="home-menu">Home</a> </li>
+            <li> <a href="About.html" class="nav-link" id="about-menu">About</a> </li>
+            <li> <a href="homer.html" class="nav-link" id="room-menu">Room</a> </li>
+            <li> <a href="homeo.html" class="nav-link" id="food-menu">Order Food</a> </li>
+            <li> <a href="serve.html" class="nav-link" id="Serve-menu">Serve</a> </li>
+            <li> <a href="contact.html" class="nav-link" id="Contact-menu">Contact</a> </li>
+
+
+        </ul>
+        <div class="language-buttons" style="margin: 1rem;">
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('th')">TH</button>
+</div>
+        <div class="loginbox">
+            <a href="login_page.html" class="loginbox" id="Log-in"><i class='bx bxs-user'></i>Account</a>
+        </div>
+           <div id="about-title">
+            CHIANG RUNG PARK
+
+    </div>
+    <div id="word">
+        Chiang Rai , Thailand
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    </head>
+    <body>
+        <div class = "dino"></div>
+    </body>
+
+    <script>
+        function changeLanguage(language) {
+            const body = document.body;
+            body.className = language;
+      
+            // Update content based on the selected language
+            const homemenu = document.getElementById('home-menu');
+            const aboutmenu = document.getElementById('about-menu');
+            const roommenu = document.getElementById('room-menu');
+            const foodment = document.getElementById('food-menu');
+            const Servement = document.getElementById('Serve-menu');
+            const Contactmenu = document.getElementById('Contact-menu');
+            const abouttitle = document.getElementById('about-title')
+            const Login = document.getElementById('Log-in')
+            if (language === 'en') {
+                homemenu.textContent = 'Home';  
+                aboutmenu.textContent = 'About';
+                roommenu.textContent = 'Room';   
+                foodment.textContent = 'Order Food'; 
+                Servement.textContent = 'Serve';
+                Contactmenu.textContent = 'Contact'; 
+               abouttitle.textContent = 'CHIANG RUNG PARK';
+               Login.innerHTML = '<i class="bx bxs-user"></i>Account';
+
+               
+            } else if (language === 'th') {
+              homemenu.textContent = 'หน้าแรก';
+              aboutmenu.textContent = 'เกี่ยวกับ';
+              roommenu.textContent = 'ห้องพัก';  
+              foodment.textContent = 'สั่งอาหาร';
+              Servement.textContent = 'บริการ';
+              Contactmenu.textContent = 'ติดต่อ';
+              abouttitle.textContent = 'CHIANG RUNG PARK';
+              Login.innerHTML = '<i class="bx bxs-user"></i>บัญชี';
+
+      
+            }
+        }
+      </script>
+      
+    
+</body>
+</html>

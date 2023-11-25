@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="TH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrungpark</title>
+    
+    <link rel="stylesheet" href="serve.css">
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="home.html" class="logo"> <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/logo-chiangrungpark-1200x485.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="home.html" class="nav-link" id="Home-menu">Home</a> </li>
+          <li> <a href="serve.html" class="nav-link" id="Serve-menu">Serve</a> </li>
+          <li> <a href="homer.html" class="nav-link" id="Room-menu">Room</a> </li>
+          <li> <a href="homeo.html" class="nav-link" id="food-menu">Order Food</a> </li>
+          <li> <a href="contact.html" class="nav-link" id="Contact-menu">Contact</a> </li>
+          <li><a href="cancelorder.html" id="cancle">Cancel </a></li>
+        </ul>
+        
+      <div class="language-buttons" style="margin: 2rem;">
+          <button onclick="changeLanguage('en')">EN</button>
+          <button onclick="changeLanguage('th')">TH</button>
+      </div>
+
+        <div class="loginbox">
+          <a href="login_page.html" class="loginbox" id="oo"><i class='bx bxs-user'></i>Account</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+      
+      <section class="serve-section">
+        <div class="title">
+            <h1 id="menu1-title">Service</h1>
+        </div>
+
+        <div class="service">
+            <img src="https://i.pinimg.com/564x/11/50/60/1150605f0c4b042680fad26d5d2c0cdc.jpg" alt="service">
+            <h2 id="menu2-title">Parking service</h2>
+            <p id="menu2-description">There is parking available for more than 20 cars</p>
+        </div>
+
+        <div class="service">
+            <img src="https://i.pinimg.com/564x/38/f3/d9/38f3d99b01072f018bd7a3cd30db7f00.jpg" alt="service">
+            <h2 id="menu3-title">Room service</h2>
+            <p id="menu3-description">24-hour room service for food and drinks</p>
+        </div>
+
+        <div class="service">
+            <img src="https://i.pinimg.com/564x/75/be/53/75be532ad895e5c5474d65969cb9707a.jpg" alt="service">
+            <h2 id="menu4-title">Internet</h2>
+            <p id="menu4-description">There is an internet signal available in all rooms</p>
+        </div>
+
+        <div class="service">
+            <img src="https://i.pinimg.com/564x/e1/d1/14/e1d114fde3f3263bc76d5218c2f356a1.jpg" alt="service">
+            <h2 id="menu5-title">Customer service</h2>
+            <p id="menu5-description">Request assistance 24 hours a day</p>
+        </div>
+    </section>
+
+      <footer>
+        <div class="footer">
+        <p id="copyright">Copyright 2023 , Chiangrungpark © All rights reserved.</p>
+        </div>
+      </footer>
+      <script>
+        function changeLanguage(language) {
+            const body = document.body;
+            body.className = language;
+    
+            // Update content based on the selected language
+            const Homemenu = document.getElementById('Home-menu');
+            const Servemenu = document.getElementById('Serve-menu');
+            const Roommenu = document.getElementById('Room-menu');
+            const foodmenu = document.getElementById('food-menu');
+            const Contactmenu = document.getElementById('Contact-menu');
+            const oo = document.getElementById('oo')
+            const cancle = document.getElementById('cancle');
+
+            const menu1Title = document.getElementById('menu1-title');
+            const menu2Title = document.getElementById('menu2-title');
+            const menu2Description = document.getElementById('menu2-description');
+            const menu3Title = document.getElementById('menu3-title');
+            const menu3Description = document.getElementById('menu3-description');
+            const menu4Title = document.getElementById('menu4-title');
+            const menu4Description = document.getElementById('menu4-description');
+            const menu5Title = document.getElementById('menu5-title');
+            const menu5Description = document.getElementById('menu5-description');
+            const copyright = document.getElementById('copyright');
+            
+    
+            if (language === 'en') {
+                Homemenu.textContent = 'Home';
+                Servemenu.textContent = 'Serve';
+                Roommenu.textContent = 'Room';
+                foodmenu.textContent = 'Order Food';
+                Contactmenu.textContent = 'Contact';
+                oo.innerHTML = '<i class="bx bxs-user"></i>Account';
+                cancle.textContent = 'Cancel';
+
+                menu1Title.textContent = 'Service';
+                menu2Title.textContent = 'Parking service';
+                menu2Description.textContent = 'There is parking available for more than 20 cars';
+                menu3Title.textContent = 'Room service';
+                menu3Description.textContent = '24-hour room service for food and drinks';
+                menu4Title.textContent = 'Internet';
+                menu4Description.textContent = 'There is an internet signal available in all rooms';
+                menu5Title.textContent = 'Customer service';
+                menu5Description.textContent = 'Request assistance 24 hours a day';
+                copyright.textContent = 'Copyright 2023 , Chiangrungpark © All rights reserved.';
+            
+              } else if (language === 'th') {
+               Homemenu.textContent = 'หน้าแรก';
+               Servemenu.textContent = 'บริการ';
+               Roommenu.textContent = 'ที่พัก';
+               foodmenu.textContent = 'สั่งอาหาร';
+               Contactmenu.textContent = 'ติดต่อ';
+               oo.innerHTML = '<i class="bx bxs-user"></i>บัญชี';
+               cancle.textContent = 'ยกเลิก';
+               
+               menu1Title.textContent = 'สิ่งอำนวยความสะดวก';
+                menu2Title.textContent = 'บริการที่จอดรถ';
+                menu2Description.textContent = 'มีที่จอดรถให้บริการมากกว่า 20 คัน';
+                menu3Title.textContent = 'รูมเซอร์วิส';
+                menu3Description.textContent = 'บริการอาหารและเครื่องดื่มถึงห้องพัก 24 ชั่วโมง';
+                menu4Title.textContent = 'อินเตอร์เน็ต';
+                menu4Description.textContent = 'มีสัญญาณอินเตอร์เน็ตให้บริการทุกห้อง';
+                menu5Title.textContent = 'บริการลูกค้า';
+                menu5Description.textContent = 'สามารถติดต่อขอความช่วยเหลือได้ 24 ชั่วโมง';
+               copyright.textContent = 'ลิขสิทธิ์ 2023 , Chiangrungpark © สงวนลิขสิทธิ์ทุกประการ.';
+            }
+        }
+      </script>
+    
+    </body>
+  
+  </html>
+     
+    </body>
+    
+    
+    </html>
+      
+ 
+
+   
+    

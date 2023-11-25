@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100vh;
+    display: grid;
+    z-index: 100;
+    
+}
+body::before {
+    content: '';
+    background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5353-2-3-1.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    filter: alpha(opacity=0);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:none;
+    color: #ffffff;
+    height: 70px;
+    padding: 10px 20px;
+    z-index: 101;
+}
+.logo img {
+    width: 190px;
+    z-index: 101;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e700;
+    background-color: #f3f3f300;
+    font-family: sans-serif;
+    z-index: 101;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 12px;
+    margin: 25px;
+    font-size: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    z-index: 101;
+}
+
+menu li a.active {
+    color: white;
+    background-color: #4CAF50;
+    z-index: 101;
+}
+.menu a:hover {
+    background-color: rgba(88, 51, 38, 0.507);
+    border-radius: 30px;
+    z-index: 101;
+}
+
+.loginbox{
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transform: translate(15px,0px);
+    z-index: 101;
+}
+
+.language-buttons button  {
+        background-color: #0c500f;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        margin-right: 15px;
+        transform: translate(-5px,0px);
+        font-size: 20px;
+        font-family: sans-serif;
+        z-index: 101;
+}
+
+#about-title{
+    width: 110%; 
+    height: 10vh;
+   padding: 20px;
+   font-weight: 100%;
+   color: #0b0b0b;
+   padding: 20px;
+   position: absolute;
+   bottom: 350px;
+   left: 10%;
+   text-align: center;
+   font-size: 90px;
+   line-height: 1.5;
+   font-family: serif;
+   z-index: 101;
+}
+#word{
+    width: 110%; 
+    height: 10vh;
+   padding: 20px;
+   font-weight: 100%;
+   color: #ffffff;
+   padding: 20px;
+   position: absolute;
+   bottom: 200px;
+   left: 10%;
+   text-align: center;
+   font-size: 40px;
+   line-height: 1.5;
+   font-family: serif;
+   z-index: 101;
+}
+.dino {
+    border-radius: 10px;
+    background-size: cover; 
+    width: 350px; 
+    height: 350px; 
+    position: absolute;
+    animation-name: move, spin;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s, 5s; 
+    transform: translate(100px,220px);
+    z-index: 101;
+    
+
+}
+@keyframes move {
+    0%, 100% {
+        background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5587.jpg");
+        transform: rotate(0deg) translate(100px,220px);
+    }
+    25% {
+        background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5927.jpg");
+        transform: rotate(0deg) translate(100px,220px);
+    }
+    50% {
+        background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5488.jpg");
+        transform: rotate(0deg) translate(100px,220px);
+    }
+    75% {
+        background-image: url("https://chiangrungpark.com/wp-content/uploads/2023/02/DSC54531.jpg");
+        transform: rotate(0deg)  translate(100px,220px);
+    }
+    
+}

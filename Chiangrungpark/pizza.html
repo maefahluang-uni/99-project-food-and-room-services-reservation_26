@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiangrung Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Prompt:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo"><a href="homeo.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOWjeCxRZ4GjpMMZs6reuO6pdwkdroxDwMf6vCVHCQw&s"></a></div>
+                <ul class="menu">
+                    <li><a href="home.html" id="tap-menu1">Home</a></li>
+                    <li><a href="menu.html" id="tap-menu2">Menu</a></li>
+                    <li><a href="cancelorder.html" id="tap-menu3">Cancel Order</a></li>
+                    <li><a href="cart.html"><i class='bx bxs-cart bx-md'></i></a></li>
+                    <div class="language-buttons" style="margin: 2rem;">
+                        <button onclick="changeLanguage('en')">EN /</button>
+                        <button onclick="changeLanguage('th')">TH</button>
+                    </div>
+                    <div class="loginbox">
+                        <a href="login_page.html" class="loginbox" id="tap-menu4">Account</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="maincontent">
+        <div class="container">
+            <div class="maincontent-con">
+                <div class="maincontent-info">
+                    <h3 id="restaurant-title">Pizza</h3>
+                    <p id="restaurant-description">Pizza is an iconic Italian dish consisting of a round, flatbread crust topped with tomato sauce, cheese, and various toppings, then baked to a delicious, savory perfection.</p>
+                    <div style="padding: 30px;"></div>
+                </div>
+
+                <div class="maincontent-img">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/c5/a4/14/pepperoni-lovers.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+     
+    </section>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <ul class="menu">
+                    <li><a href="thaimenu.html" id="select-menu1">Thai Menu</a></li>
+                    <li><a href="spaghettimenu.html" id="select-menu2">Spaghetti Menu</a></li>
+                    <li><a href="pizza.html" id="select-menu3">Pizza Menu</a></li>
+                    <li><a href="beverage.html" id="select-menu4">Beverage Menu</a></li>
+                    <li><a href="dessertmenu.html" id="select-menu5">Dessert Menu</a></li>
+                    <li><input type="text" id="search" placeholder="Search Menu"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 20px;"></div>
+
+    <section class="content">
+        <div class="container">
+            <div class="content-title">
+                <h3 id="recommend-title">Pizza Menu</h3>
+            </div>
+            <div class="content-con">
+                <div class="content-item">
+                    <img src="https://sipbitego.com/wp-content/uploads/2021/08/Pepperoni-Pizza-Recipe-Sip-Bite-Go.jpg" alt="">
+                    <h4 id="menu1-title">Pepperoni Pizza</h4>
+                    <p id="menu1-description">Pizza with Pepperoni.</p>
+                    <a href="#" class="content-button" id="price-1"> 229 Baht</a>
+                </div>
+                <div class="content-item">
+                    <img src="https://admin.screaminsicilian.com/wp-content/uploads/2021/04/product-overhead_SS_Hawaiian.png" alt="">
+                    <h4 id="menu2-title">Hawaiian pizza</h4>
+                    <p id="menu2-description"> Pizza with seafood and pineapple.</p>
+                    <a href="#" class="content-button" id="price-2"> 159 Baht</a>
+                </div>
+                <div class="content-item">
+                    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/41703-sfs-chicago-thin-crust-pizza-22.jpg" alt="">
+                    <h4 id="menu3-title">Chicago Thin Crust Pizza</h4>
+                    <p id="menu3-description">Chicago Style Pizza with Pepperoni.</p>
+                    <a href="#" class="content-button" id="price-3"> 279 Baht</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div style="padding: 40px;"></div>
+
+    <section class="content">
+        <div class="container">
+            <div class="content-con">
+                <div class="content-item">
+                    <img src="https://manitopizzaorder.com/cdn/shop/products/0004_14--Carbonara.png?v=1657343442" alt="">
+                    <h4 id="menu4-title">Pizza carbonara</h4>
+                    <p id="menu4-description">Pizza with carbonara and bacon.</p>
+                    <a href="#" class="content-button" id="price-4"> 209 Baht</a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <div style="padding: 70px;"></div>
+  <footer>
+    <div class="footer">
+    <p id="copyright">Copyright 2023 , Chiangrungpark © All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function changeLanguage(language) {
+        const body = document.body;
+        body.className = language;
+
+        // Update content based on the selected language
+        const tapmenu1 = document.getElementById('tap-menu1');
+        const tapmenu2 = document.getElementById('tap-menu2');
+        const tapmenu3 = document.getElementById('tap-menu3');
+        const tapmenu4 = document.getElementById('tap-menu4');
+        const restaurantTitle = document.getElementById('restaurant-title');
+        const restaurantDescription = document.getElementById('restaurant-description');
+        const orderButton = document.getElementById('order-button');
+        const recommendTitle = document.getElementById('recommend-title');
+        const selectmenu1 = document.getElementById('select-menu1');
+        const selectmenu2 = document.getElementById('select-menu2');
+        const selectmenu3 = document.getElementById('select-menu3');
+        const selectmenu4 = document.getElementById('select-menu4');
+        const selectmenu5 = document.getElementById('select-menu5');
+        const menu1Title = document.getElementById('menu1-title');
+        const menu1Description = document.getElementById('menu1-description');
+        const menu2Title = document.getElementById('menu2-title');
+        const menu2Description = document.getElementById('menu2-description');
+        const menu3Title = document.getElementById('menu3-title');
+        const menu3Description = document.getElementById('menu3-description');
+        const menu4Title = document.getElementById('menu4-title');
+        const menu4Description = document.getElementById('menu4-description');
+        const menu5Title = document.getElementById('menu5-title');
+        const menu5Description = document.getElementById('menu5-description');
+        const copyright = document.getElementById('copyright');
+        const loginBox = document.querySelector('.loginbox'); // Select the login box container
+        const price1 = document.getElementById('price-1');
+        const price2 = document.getElementById('price-2');
+        const price3 = document.getElementById('price-3');
+        const price4 = document.getElementById('price-4');
+        const searchInput = document.getElementById('search');
+
+        if (language === 'en') {
+            tapmenu1.textContent = 'Home';
+            tapmenu2.textContent = 'Menu';
+            tapmenu3.textContent = 'Cancel Order';
+            tapmenu4.innerHTML = 'Account'; // Update the content with the user icon
+            restaurantTitle.textContent = 'Pizza';
+            restaurantDescription.textContent = 'Pizza is an iconic Italian dish consisting of a round, flatbread crust topped with tomato sauce, cheese, and various toppings, then baked to a delicious, savory perfection.';
+            selectmenu1.textContent = 'Thai Menu';
+            selectmenu2.textContent = 'Spaghetti Menu';
+            selectmenu3.textContent = 'Pizza Menu';
+            selectmenu4.textContent = 'Beverage Menu';
+            selectmenu5.textContent = 'Dessert Menu';
+            recommendTitle.textContent = 'Pizza Menu';
+            menu1Title.textContent = 'ฺPepperoni Pizza';
+            menu1Description.textContent = 'Pizza with Pepperoni.';
+            menu2Title.textContent = 'Hawaiian pizza';
+            menu2Description.textContent = 'Pizza with seafood and pineapple.';
+            menu3Title.textContent = 'Chicago Thin Crust Pizza';
+            menu3Description.textContent = 'Chicago Style Pizza with Pepperoni.';
+            menu4Title.textContent = 'Pizza carbonara';
+            menu4Description.textContent = 'Pizza with carbonara and bacon.';
+            copyright.textContent = 'Copyright 2023 , Chiangrungpark © All rights reserved.';
+            price1.textContent = '229 Baht';
+            price2.textContent = '159 Baht';
+            price3.textContent = '279 Baht';
+            price4.textContent = '209 Baht';
+            searchInput.placeholder = 'Search Menu';
+        } else if (language === 'th') {
+            tapmenu1.textContent = 'หน้าแรก';
+            tapmenu2.textContent = 'เมนูอาหาร';
+            tapmenu3.textContent = 'ยกเลิกออเดอร์';
+            tapmenu4.innerHTML = 'บัญชี'; // Update the content with the user icon
+            restaurantTitle.textContent = 'พิซซ่า';
+            restaurantDescription.textContent = 'พิซซ่าเป็นอาหารอิตาเลียนอันเป็นเอกลักษณ์ที่ประกอบด้วยเปลือกขนมปังแบนกลมๆ ราดด้วยซอสมะเขือเทศ ชีส และท็อปปิ้งต่างๆ จากนั้นอบจนได้รสชาติที่อร่อยและกลมกล่อม.';
+            selectmenu1.textContent = 'เมนูอาหารไทย';
+            selectmenu2.textContent = 'เมนูสปาเก็ตตี้';
+            selectmenu3.textContent = 'เมนูพิซซ่า';
+            selectmenu4.textContent = 'เมนูเครื่องดื่ม';
+            selectmenu5.textContent = 'เมนูขนมหวาน';
+            recommendTitle.textContent = 'เมนูพิซซ่า';
+            menu1Title.textContent = 'พิซซ่าหน้าเปปเปอโรนี';
+            menu1Description.textContent = 'พิซซ่าโรยด้วยหน้าเปปเปอโรนี';
+            menu2Title.textContent = 'พิซซ่าหน้าฮาวายเอี้ยน';
+            menu2Description.textContent = 'พิซซ่าหน้าฮาวายเอี้ยนกับอาหารทะเลและสัปปะรด';
+            menu3Title.textContent = 'พิซซ่าแป้งบางกรอบชิคาโก';
+            menu3Description.textContent = 'พิซซ่าแป้งบางกรอบชิคาโกหน้าเปปเปอโรนี';
+            menu4Title.textContent = 'พิซซ่าหน้าซอสคาโบนาร่า';
+            menu4Description.textContent = 'พิซซ่าหน้าซอสคาโบนาร่าพร้อมเบคอน';
+            copyright.textContent = 'ลิขสิทธิ์ 2023 , Chiangrungpark © สงวนลิขสิทธิ์ทุกประการ.';
+            price1.textContent = '229 บาท';
+            price2.textContent = '159 บาท';
+            price3.textContent = '279 บาท';
+            price4.textContent = '209 บาท';
+            searchInput.placeholder = 'ค้นหาเมนู';
+        }
+    }
+  </script>
+</body>
+</html>

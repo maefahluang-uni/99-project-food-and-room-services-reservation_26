@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+      background-image: url('https://chiangrungpark.com/wp-content/uploads/2023/02/DJI_07851.jpg'); /* Replace 'your-background-image-url.jpg' with the URL or path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 15px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /*--------------ภาษา--------*/
+  .language-buttons {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Align buttons vertically in the center */
+    margin: 2rem;
+    font-family: sans-serif;
+}
+
+.language-buttons button {
+    background-color: #C1B086; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 14px; /* Font size of the text */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the right margin between buttons */
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+    font-family: sans-serif;
+}
+
+.language-buttons button:hover {
+    background-color: #A0926D; /* Darker color on hover */
+}
+
+  /*--------------header--------*/
+  .bank {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+  }
+  
+  header {
+    height: 8vh;
+  }
+  
+  .logo img {
+    width: 190px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: sans-serif;
+  }
+  
+  .hambuger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    font-family: sans-serif;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin-left: 3rem;
+  }
+  
+  header ul li a {
+    font-size: 100%;
+    font-weight: 400;
+    color: rgb(15, 14, 14);
+    transition: 0.5s;
+    font-family: sans-serif;
+  }
+  
+  header ul li a:hover {
+    color: #C1B086;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+      font-family: sans-serif;
+    }
+  
+    header ul.active {
+      left: 0%;
+    }
+  
+    header ul li {
+      margin: 2.5rem 0;
+    }
+  
+    header ul li a {
+      color: black;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
+  .loginbox{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+
+/*--------------book--------*/
+  /*--------------serve--------*/
+
+  .serve-section {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+  }
+  
+  .service {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s; 
+    font-family: sans-serif;
+  }
+  
+  .service:hover {
+    transform: scale(1.1); /* Scale the service on hover */
+  }
+  
+  .title h1 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    font-family: 'Your Custom Font', sans-serif;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+  }
+  
+  .service h2 {
+    font-size: 24px;
+    color: #0065b7;
+    font-family: sans-serif;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #555;
+    font-family: sans-serif;
+  }
+  
+  .service img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    font-family: sans-serif;
+  }
+  
+  /*---footer----*/
+.footer{
+  background-color: rgb(10, 61, 91);
+  color: #fff;
+  padding: 20px;
+  font-weight: 650;
+  font-family: sans-serif;
+}
+  

@@ -1,0 +1,509 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.head_container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/*--------------ภาษา--------*/
+.language-buttons {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center; /* Align buttons vertically in the center */
+  margin: 2rem;
+  
+}
+
+.language-buttons button {
+  background-color: #C1B086; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 14px; /* Font size of the text */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer;
+  margin-right: 10px; /* Adjust the right margin between buttons */
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.language-buttons button:hover {
+  background-color: #A0926D; /* Darker color on hover */
+}
+
+
+/*--------------header--------*/
+
+header {
+  height: 8vh;
+}
+
+.logo img {
+  width: 190px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.hambuger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 3rem;
+}
+
+header ul li a {
+  font-size: 110%;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: rgb(15, 14, 14);
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+header ul li a:hover {
+  color: #C1B086;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 20;
+  }
+
+  header ul.active {
+    left: 0%;
+  }
+
+  header ul li {
+    margin: 2.5rem 0;
+  }
+
+  header ul li a {
+    color: black;
+  }
+
+  .hambuger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hambuger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.loginbox{
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/*--------------header--------*/
+/*--------------home--------*/
+.home .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.home .text {
+  max-width: 50%;
+  color: white;
+  margin: 20% 0 0 10%;
+  font-family: sans-serif;
+}
+
+.home h1 {
+  font-size: 85px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
+}
+
+.home p {
+  font-weight: 400px;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 50px 0 0 50px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 20px 40px;
+  background: none;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition:  0.3s, color 0.3s, font-size 0.3s;
+  font-size: 13px; /* Adjust the initial font size as needed */
+}
+
+button:hover {
+  background: white;
+  color: #333; /* Change to the desired text color on hover */
+  font-size: 15px; /* Adjust the font size on hover as needed */
+}
+
+
+.home button {
+  margin-left: 50px;
+}
+
+.home .image_item {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.home .image_item img {
+  width: 140px;
+  height: 94px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.home .image_item img.active {
+  border: 2px solid white;
+}
+.home .image_item img:hover {
+  border: 2px solid white;
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.home .box .text {
+  position: relative;
+}
+
+
+
+/*--------------home--------*/
+/*--------------book--------*/
+/* ปรับสไตล์ส่วน .book */
+.book {
+  margin-top: 7%;
+  width: 100%;
+  color: #0c0000;
+  text-align: l;
+  padding: 30px;
+  background-image: url('https://chiangrungpark.com/wp-content/uploads/2023/02/DJI_07851.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(248, 246, 246, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 90px; /* เพิ่มพื้นที่ด้านล่าง */
+}
+
+.book .image1 {
+  max-width: 25px; /* Adjust the value as needed */
+  width: 100%;
+  height: auto;
+}
+
+.book h1 {
+  font-size: 40px;
+  color: #333;
+  margin-top: 0;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.book p {
+  margin-top: 9px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #666666;
+  text-align: center; /* Add text-align CSS */
+  max-width: 600px; /* Set a maximum width for the paragraph */
+  margin-left: auto; /* Center the paragraph by setting the left margin to auto */
+  margin-right: auto; /* Center the paragraph by setting the right margin to auto */
+}
+
+/* ปรับสไตล์ของ input และ select */
+.input .box {
+  text-align: left; /* ให้ข้อมูลอยู่ตรงกลาง */
+  font-family: sans-serif;
+}
+
+
+/* ปรับสไตล์ของ input, select, และปุ่ม */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.input {
+  background: #ffffff;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.searchs {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+#submits {
+  background-color: #333;
+  color: #fefefe;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submits:hover {
+  background-color: #555; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+
+/* ปรับสไตล์ของ select */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+select:focus {
+  border: 1px solid #007bff;
+}
+/*--------------book--------*/
+/*--------------about--------*/
+
+.top {
+  margin-top: 10%;
+}
+
+.mtop {
+  margin-top: 5%;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about .img {
+  position: relative;
+}
+
+.about .image1 {
+  width: 100%; /* Adjust width as needed */
+  max-width: 310px; /* Maximum width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about .image2 {
+  width: 100%; /* Adjust width as needed */
+  max-width: 325px; /* Maximum width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  bottom: 5px;
+  z-index: 2;
+  right: 30%;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: #C1B086;
+}
+
+.heading h5 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  color: #5f5f5f;
+}
+.heading h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  color: #222222;
+}
+.heading h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  color: #222222;
+}
+.heading h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  color: #222222;
+}
+
+.heading p {
+  margin-bottom: 20px;
+  line-height: 25px;
+  color: #5f5f5f;
+  margin: 0 0 20px 50px;
+}
+
+
+.heading p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #5f5f5f;
+}
+
+.heading .btn1 {
+  margin: 20px 0;
+}
+
+.btn1 {
+  background: #C1B086;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition:  0.3s;
+}
+
+.btn1:hover {
+  background: #A89567;
+}
+
+/*---footer----*/
+.footer {
+  background-color: rgb(10, 61, 91);
+  color: #fff;
+  padding: 20px;
+  font-weight: 650;
+  text-align: left; /* Align text to the left */
+}
+
+.footer p {
+  font-size: 16px; /* Adjust the font size as needed */
+  font-family: sans-serif;
+  margin: 0; /* Remove default margin for paragraphs */
+}
+

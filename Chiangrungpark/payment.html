@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chiangrungpark</title>
+        <link rel="stylesheet" href="payment.css">
+    </head>
+    
+    <body>
+      <header class="header" id="navigation-menu">
+        <div class="container">
+          <nav>
+            <a href="home.html" class="logo"> <img src="https://chiangrungpark.com/wp-content/uploads/2023/02/logo-chiangrungpark-1200x485.png" alt=""> </a>
+    
+            <ul class="nav-menu">
+              <li> <a href="home.html" class="nav-link" id="Home-menu">Home</a> </li>
+              <li> <a href="serve.html" class="nav-link" id="Serve-menu">Serve</a> </li>
+              <li> <a href="homer.html" class="nav-link" id="Room-menu">Room</a> </li>
+              <li> <a href="homeo.html" class="nav-link" id="food-menu">Order Food</a> </li>
+              <li> <a href="contact.html" class="nav-link" id="Contact-menu">Contact</a> </li>
+              <li><a href="cancelorder.html" id="cancle">Cancel </a></li>
+            </ul>
+
+          <div class="language-buttons" style="margin: 2rem;">
+              <button onclick="changeLanguage('en')">EN</button>
+              <button onclick="changeLanguage('th')">TH</button>
+          </div>
+
+            <div class="loginbox">
+              <a href="login_page.html" class="loginbox" id="oo"><i class='bx bxs-user'></i>Account</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+     
+
+    <div class="payment">
+      <div class="title">
+          <h1 class="title" id="tt">Choose payment method</h1>
+      </div>
+
+      <section class="paymen">
+      <form action="#">
+        
+          <a href="credit.html">
+          <div class="category">
+              <label for="visa" class="visaMethod">
+                  <div class="imgName">
+                      <div class="imgpayment visa">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvR_eZPqopnRapSqL9b8Zq3HUxYy3vtkUZW68VXbgsPARKb3fA5ZWc8xLsSjkQ1o5_8Q&usqp=CAU" alt="">
+                      </div>
+                      <span class="name" id="visas">Credit/debit card</span>
+                  </div>
+                  <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+              </label>
+          </a>
+
+          <a href="qr codde.html">
+              <label for="mastercard" class="mastercardMethod">
+                  <div class="imgName">
+                      <div class="imgpayment mastercard">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5PYQXAYi25Ds-lP0j68-w3xvs0OnKJyBKMaUjF7nkMEcc9QffjPue7qIoj5V38mNPK0&usqp=CAU" alt="">
+                      </div>
+                      <span class="name" id="mastercards">QR code</span>
+                  </div>
+                  <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+              </label>
+            </a>
+
+            <a href="bank.html">
+              <label for="paypal" class="paypalMethod">
+                  <div class="imgName">
+                      <div class="imgpayment paypal">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNHUVSZkAiUoifjs4xIAQfHqYDSlMEmeQ8KF__cRlPlf3-CVfCsUq3yvS8d1dI21fjmZs&usqp=CAU" alt="">
+                      </div>
+                      <span class="name" id="paypals">Bank account transfer</span>
+                  </div>
+                  <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+              </label>
+            </a>
+          </div>
+      </form>
+  </div>
+</section>
+
+  <footer>
+    <div class="footer">
+    <p id="copyright">Copyright 2023 , Chiangrungpark © All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    function changeLanguage(language) {
+        const body = document.body;
+        body.className = language;
+
+        // Update content based on the selected language
+        const Homemenu = document.getElementById('Home-menu');
+        const Servemenu = document.getElementById('Serve-menu');
+        const Roommenu = document.getElementById('Room-menu');
+        const foodmenu = document.getElementById('food-menu');
+        const Contactmenu = document.getElementById('Contact-menu');
+        const oo = document.getElementById('oo');
+        const cancle = document.getElementById('cancle');
+
+        const tt = document.getElementById('tt');
+        const visas = document.getElementById('visas');
+        const mastercards = document.getElementById('mastercards');
+        const paypals = document.getElementById('paypals');
+        const copyright = document.getElementById('copyright');
+
+        if (language === 'en') {
+            Homemenu.textContent = 'Home';
+            Servemenu.textContent = 'Serve';
+            Roommenu.textContent = 'Room';
+            foodmenu.textContent = 'Order Food';
+            Contactmenu.textContent = 'Contact';
+            oo.innerHTML = '<i class="bx bxs-user"></i>Account';
+            cancle.textContent = 'Cancel';
+
+            tt.textContent = 'Choose payment method';
+            visas.textContent = 'Credit/debit card';
+            mastercards.textContent = 'QR code';
+            paypals.textContent = 'Bank account transfer';
+            copyright.textContent = 'Copyright 2023 , Chiangrungpark © All rights reserved.';
+        
+          } else if (language === 'th') {
+           Homemenu.textContent = 'หน้าแรก';
+           Servemenu.textContent = 'บริการ';
+           Roommenu.textContent = 'ที่พัก';
+           foodmenu.textContent = 'สั่งอาหาร';
+           Contactmenu.textContent = 'ติดต่อ';
+           oo.innerHTML = '<i class="bx bxs-user"></i>บัญชี';
+           cancle.textContent = 'ยกเลิก';
+
+
+           tt.textContent = 'เลือกวิธีการชำระเงิน';
+           visas.textContent = 'บัตรเครดิต/เดบิต';
+           mastercards.textContent = 'คิวอาร์โค้ด';
+           paypals.textContent = 'โอนเงินบัญชีธนาคาร';
+           copyright.textContent = 'ลิขสิทธิ์ 2023 , Chiangrungpark © สงวนลิขสิทธิ์ทุกประการ.';
+        }
+    }
+  </script>
+
+</body>
+
+</html>

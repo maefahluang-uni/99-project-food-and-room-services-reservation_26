@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(237, 235, 235) url('https://chiangrungpark.com/wp-content/uploads/2023/02/DSC5353-2-3-1.jpg') no-repeat center/cover;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+/* Add margin to the top of the container to separate it from the background */
+.container {
+  margin-top: 20px;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+/* Improve styling for inlined elements */
+div.elem-group.inlined {
+  width: 100%; /* Use full width for inlined elements */
+  margin-bottom: 20px; /* Add space between inlined groups */
+}
+
+label {
+  display: block;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 5px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: sans-serif;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+}
+
+div.elem-group.inlined input {
+  width: 100%; /* Use full width for inlined input */
+}
+
+textarea {
+  height: 250px;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+button:hover {
+  background-color: #fba63d;
+  border: 2px solid black;
+}
+
+.Topic {
+  color: #ffe30d;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.Head {
+  color: #ffe586;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.Info {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.language-buttons button {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.language-buttons {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  font-family: sans-serif;
+}
