@@ -13,7 +13,7 @@ steps:
    - 'deploy'
    - 'project'
    - '--image'
-   - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project26/project:$COMMIT_SHA'
+   - 'us-central1-docker.pkg.dev/group26-406312/project26/project'
    - '--region'
    - 'us-central1'
    - '--allow-unauthenticated'
