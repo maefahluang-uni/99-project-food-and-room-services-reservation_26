@@ -14,8 +14,10 @@ Sirinan Hongdamnean 6531503083
 
 Anchisa Sittee 6531503089
 
-*** Backend can run but cannot connected with Frontend ***
+***Backend can run but cannot connected with Frontend***
 
 ![Alt text](image.png)
 
-***Deployment on GCP with Cloud Build***
+***Deployment on GCP with Cloud Build finish***
+
+***View finish***
