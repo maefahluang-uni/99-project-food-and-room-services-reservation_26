@@ -4,16 +4,16 @@ steps:
    args: [ 'build', '-t', 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project/project26:$COMMIT_SHA', '.' ]
  # Push the container image to Artifact Registry
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project/project26:$COMMIT_SHA']
+   args: ['push', 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project26/project:$COMMIT_SHA']
  # Deploy container image to Cloud Run
  - name: 'gcr.io/cloud-builders/gcloud'
    entrypoint: gcloud
    args:
    - 'run'
    - 'deploy'
-   - 'project26'
+   - 'project'
    - '--image'
-   - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project/project26:$COMMIT_SHA'
+   - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project26/project:$COMMIT_SHA'
    - '--region'
    - 'us-central1'
    - '--allow-unauthenticated'
@@ -22,7 +22,7 @@ steps:
    - '--port'
    - '8100'
 images:
- - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project/project26'
+ - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/project26/project'
 
 substitutions:
   _PROJECT_ID: 'group26-406312'
